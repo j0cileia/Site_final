@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style_modelo.css" />
+		<title>
+            Fale conosco
+        </title>
+		<script type="text/javascript">
+			
+			
+			<script type="text/javascript">
+		
+			function validar() {
+ 
+    var nome = document.getElementById("cNome");
+
+	 if (nome.value == ""
+		 || nome.value.length <10
+		 || nome.value.length >50 )
+		{
+        window.alert('Preencha seu nome corretamente');
+			nome.focus();
+			return false;
+		}
+						
+	var email = document.getElementById("cEmail");
+	 if (email.value == ""
+	    || email.value.indexOf('@')==-1 
+        || email.value.indexOf('.')==-1 
+		|| email.value.indexOf('com')==-1 ) 
+	 {
+         window.alert('Preencha um e-mail válido');
+		 	email.focus();
+			return false; 
+	 } 	
+	 var mensagem = document.getElementById("cMensagem");		
+	 if (mensagem.value == ""
+		 || mensagem.value.length <10
+		 || mensagem.value.length >500 )
+		{
+        window.alert('Por favor, digite sua mensagem corretamente');
+			mensagem.focus();
+			return false;
+		}	
+
+	var assunto = document.querySelectorAll("input[name=tAssunto]:checked");
+    if (assunto.length < 1) 
+	{
+    window.alert("Selecione ao menos um assunto");
+	
+		    return false;
+	}				
+					
+		
+	var chec = document.getElementById("cCheck");		
+	 if (chec.checked == false)
+		{
+        window.alert('Por favor, aceite a politica de privacidade');
+			chec.focus();
+			return false;
+		}								
+		
+else			
+	    {alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso!!!');
+		window.location.replace("index.html");
+		return false;}
+		  
+				
+				
+					
+			window.open('', '', 'height=800, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-800)/2);
+			}
+			
+		
+		</script>		
+
+				
+		
+		
+    </head>
+    <body>
+        <!-- SESSÃO DE CABEÇALHO -->
+        <header> 
+            <div class="barra_superior">
+                <div class="container">
+                    Horário de Atendimento: De segunda a sábado, das 09h às 18h.
+                </div>
+            </div>
+            
+            <div class="container">
+                <img alt="Logo da Empresa" class="logo" title="Logo da Empresa ABC" src="img/logoloja.PNG"/>
+                <nav>
+					 <a title="Vai para a página de Inicial"  href="index.html">Página Inicial |
+                    
+					<a title="Vai para a página de Produtos e Marcas"  href="produtos_marcas.html">Produtos e Marcas |
+					</a>
+                    <a title="Vai para a página de Fale Conosco" >Fale conosco
+                    </a> 
+					<a title="Exibir mapa" class="btn_destaque" href="ondeestamos.html">
+						<img id="mapa" alt="Link para mapa" src="img/mapa.png" width="38" height="40">&nbsp Onde estamos &nbsp&nbsp
+					  <a/>            
+                </nav>		
+		<div class="container2">
+			<h1>Fale conosco!</h1>
+			<div class="titulo">Dúvidas, críticas e sugestões. Esse é o lugar!
+	<br/>
+	<br/>
+	<form name="form" id="contato" action="#"  method="post" onSubmit="return validar();" >
+	    <fieldset id="formulario"> 
+	  <!-- 	<input type="hidden" id="id" name="id" value="" /> -->
+		<br>
+	  <div class="form-group">
+	    <label for="cnome">Nome:*</label>
+	    <input type="text" name="nome" id="cNome" placeholder="Digite seu nome..." size="30"/><br>
+	    <small id="ajudaNome" class="form-text text-muted">
+			Nome deve ter entre 2 e 50 caracteres.
+		</small>
+	  </div>
+		<br>
+	  <div class="form-group">
+	    <label for="cemail">E-mail:*</label>
+	    <input type="text" name="tEmail" id="cEmail" placeholder="Digite seu e-mail..."  value="" size="30"/><br>
+	  	<small id="ajudaEmail" class="form-text text-muted">
+			Exemplo: meunome@provedor.com.br
+		</small>
+	  </div>
+		<br>
+	  <div class="form-group-assunto"> </div>
+	    <label for="assunto">Assunto:*</label>
+			<div class="radio">
+	    <input  type="radio" name="tAssunto" id="cDuvidas"/>Dúvidas
+		<input  type="radio" name="tAssunto" id="cCriticas"/>Criticas
+		<input  type="radio" name="tAssunto" id="cSugestoes"/>Sugestões
+	  </div>
+		<br>
+	  <div class="form-group">
+        <label for="cMensagem">Mensagem:*</label>
+   		<textarea name="tMensagem" id="cMensagem" rows="6" cols="31" placeholder="Mensagem..."></textarea><br>
+   		<small id="ajudaMensagem" class="form-text text-muted"> <center> A mensagem deve ter entre 50 e 500 caracteres.</center>
+		</small>
+	  </div>
+			</fieldset>
+		<br>
+		<div>
+  <input type="checkbox" name="tCheck" id="cCheck" value="on" >
+ 		Desejo receber notificação das novidades sobre produtos.
+		 
+		</div>
+		
+		<a href="java script:void(0)" onclick="open('pagina','pagina.html','status=no,Width=320,Height=285');">Abrir nova pagina</a>
+		
+<a href="#openModal" style="font-size: 20px; font-family: 'Lucida Grande', Verdana; font-weight: bold;">Abrir Janela 01</a>
+<div id="openModal" class="janela">
+  <div>
+    
+    <a href="#close" title="Fechar" class="close">X</a>  
+   <iframe src="politica.html" frameborder="0" height="100%" width="100%" ></iframe>  
+	</div>
+<br>
+	
+	<div class="politica">
+<a href="#" onClick="window.open('politica.html','pagename','width=500,height=400, top=100, left=400 ;'); return false;">Clique aqui</a>
+	</div>
+		<br>
+	  <div class="form-group float-center">
+	  		<a href="index.html"><input type="button" class="btn btn-dark" value="Voltar" /></a>
+	  		<input type="reset" class="btn btn-dark" value="Limpar" />
+	  		<input type="submit"  value="Enviar"/>
+	  		
+	  </div>
+	</form>
+	</div>
+		</div>
+		
+	</body>
+
+</html>	
+		
+		
+	
+		
+		 <!-- SESSÃO DE CABEÇALHO 
+		<div class="lateral"></div>
+		<div class="formulario">
+      
+	<h1 layout:fragment="header">Fale conosco!</h1>
+	<div layout:fragment="content">Dúvidas, críticas e sugestões. Esse é o lugar!
+	<br />
+	<br />
+	<br /> 
+		<form id="contato"  >
+		
+	    <label for="nome">Nome:*</label>
+	    <input type="text" class="form-control" id="nomeid" placeholder="Digite seu nome..."  />
+	  <p></p>
+	  <div class="form-group">
+	    <label for="email">E-mail:*</label>
+	    <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail..." />
+	  </div><p></p>
+	  <div class="form-group">
+	    <label for="assunto">Assunto:*</label>
+		   <select name="Assunto:">
+    <option value="1">Dúvidas
+    <option value="2">Críticas
+    <option value="3">Sugestões
+    </select>
+	    
+	  </div> <br>
+	  <div class="form-group">
+	        <label for="mensagem">Mensagem:*</label>
+    		<textarea name="mensagem" input type="text" class="form-control" id="mensagem" rows="4" placeholder="Mensagem...">
+		  </textarea>
+			</div>
+					  <br>
+<input type="checkbox" name="receber_info" checked>
+Desejo receber notificação das novidades sobre produtos.
+<br />
+	<br />
+		<p></p><p></p>
+	  <div class="form-group float-right">
+	  		<a href="aula2.html"><input type="button" class="btn btn-dark" value="Voltar" /></a>
+		  
+	  		<input type="submit" class="btn btn-dark" value="Enviar" />
+	  </div>
+		</div>
+</form>
+	</body>
+</html>
+            
+     -->

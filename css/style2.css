@@ -1,0 +1,349 @@
+body{
+    margin-top: 0px;
+    font-family:sans-serif:
+    
+}
+.barra_superior{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: slategray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;	
+	
+}
+
+/* links de navegacao da pagina */
+nav{
+    color: slategray; /* muda a cor da fonte? */
+    font-size: 19px;
+    float: right;
+    margin-top: 0px;
+	}
+
+nav a{
+    color: slategray; 
+    text-decoration: none; /*tira o underline do link */
+    
+}
+
+nav a.btn_destaque{
+    margin-left: 160px;
+	
+}
+
+#mapa{
+  top:1px;
+	align-content: flex-end;
+	margin-left: auto;
+}
+
+.btn_destaque{
+    background-color: gainsboro;
+    color:slategrey;
+	padding: 4px 2px;
+    /*padding: 26px 8px 0px 1px; /* margem interna do botao sup dir inf esq. somente um ele muda todos */
+    border-radius: 4px; /* arredonda as bordas */
+	font-family:sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+	border-color: black;
+	line-height: top;
+	   
+			
+}
+
+.logo{
+height: 170px;}
+
+
+
+}
+.faleconosco {
+	text-align: center;
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	
+}
+
+
+.promocao{
+	color:red;
+	text-align-last: center;
+	font-size:18px;
+	font-family: sans-serif;
+}
+
+
+.sec01{
+    height: 640px; /* altura da seção */
+    color: white;
+    background-image: url(../img/Home2.png); /* acrescenta uma imagem*/
+	background-repeat: no-repeat;
+    background-position: center;
+    line-height: 100%; /* distancia entre linhas do texto */
+		
+}
+
+.sec02{
+    height: 640px; /* altura da seção */
+    color: white;
+    background-image: url(../img/LogoArmacoes.png); /* acrescenta uma imagem*/
+	background-repeat: no-repeat;
+    background-position: center;
+    line-height: 100%; /* distancia entre linhas do texto */
+		
+}
+
+
+.sec03{
+    height: 640px; /* altura da seção */
+    color: white;
+    background-image: url(../img/LogoLentes.png); /* acrescenta uma imagem*/
+	background-repeat: no-repeat;
+    background-position: center;
+    line-height: 100%; /* distancia entre linhas do texto */
+		
+}
+
+#lateral
+{
+	width:30px;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+.endereco{
+color: slategray; /* muda a cor da fonte? */
+font-size: 14px;
+
+}
+
+footer{
+color: slategray; /* muda a cor da fonte? */
+font-size: 14px;
+
+}
+
+.fieldset{
+  
+    width: 1000px;
+    padding: 50px;
+    background: #cccccc ;
+    overflow:auto;
+	align-content:left;
+	font-family:sans-serif;
+	margin-right: 280px;
+	margin-left: 280px;
+  
+    /* Border style */
+    border: 1px solid #cccccc;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+  
+    /* Border Shadow */
+    -moz-box-shadow: 200px 200px 200px #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+  
+    }
+
+.titulo{
+	font-family: sans-serif;
+	font-size:18px;	
+	text-align: center;
+	color: red;
+	
+}
+
+.faleconosco{
+	font-family: sans-serif;
+    font-size: 26px;
+	text-align: center;
+	font-weight: bold
+	}
+
+label {
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px #ccc;
+    display: block;
+    float: left;
+	margin-right:15px;
+    font-weight: bold;
+    text-align: left;
+    width: 75px;
+    line-height: 25px;
+	font-size: 15px;
+	
+	
+    }
+
+.input {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    border: 1px solid #b9bdc1;
+    width: 150px;
+    color: #797979;
+	
+	    }
+
+.container2{
+    max-width: 800px;
+    width: 450px;
+	margin: 0 auto;	
+}
+.form-group{
+  text-align: justify-all;
+  
+}
+
+.radio{
+ 	font-family: sans-serif;
+	font-size: 13px;
+ }
+
+input:hover, textarea:hover {   
+	background-color: #dddddd;
+}
+
+
+ul#album-fotos{
+	width: 1000px;  /* 700px para tres fotos por linha */
+	margin: 0px auto;
+	padding: 70px 70px ;
+	overflow: hidden;
+	list-style: none;
+}
+
+
+ul#album-fotos li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 16px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+	-webkit-transition: all .4s ease-in;
+	
+}
+
+ul#album-fotos li span {  /* texto das caixas */
+opacity: 0;
+color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 10pt;
+	line-height: 370px;
+	padding: 5px 30px ;
+	margin: 10px;
+	
+}
+
+ul#album-fotos li:hover {
+-webkit-transform: scale(1.8);
+
+}
+
+
+ul#album-fotos li:hover span {
+opacity: 1;
+	background-position: 0px 0px;
+		background-size: 200px 200px;
+}
+
+ ul#album-fotos li#foto01 {
+	background: url('../img/oculos1.jpg') no-repeat;
+	background-position: center;
+	background-size: 250px 200px; /* tamanho original da imagem */
+	background-color: #ffffff;
+	
+}
+
+
+ ul#album-fotos li#foto02 {
+	background: url('../img/oculos2.jpg') no-repeat;
+	 background-size: 300px 300px;
+	 background-position: center;
+}
+ul#album-fotos li#foto03 {
+	background: url('../img/oculos3.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto04 {
+	background: url('../img/oculos4.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+
+ul#album-fotos li#foto05 {
+	background: url('../img/oculos5.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+
+
+ul#album-fotos li#foto06 {
+	background: url('../img/oculos6.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+
+ul#album-fotos li#foto07 {
+	background: url('../img/oculos7.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+
+ul#album-fotos li#foto08 {
+	background: url('../img/oculos8.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto09 {
+	background: url('../img/oculos9.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto10 {
+	background: url('../img/oculos10.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto11 {
+	background: url('../img/oculos11.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto12 {
+	background: url('../img/oculos12.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto13 {
+	background: url('../img/oculos13.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto14 {
+	background: url('../img/oculos14.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto15 {
+	background: url('../img/oculos15.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}
+ul#album-fotos li#foto16 {
+	background: url('../img/oculos16.jpg') no-repeat;
+	 background-size: 200px 200px;
+	 background-position: center;
+}

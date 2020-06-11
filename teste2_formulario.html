@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+	   		<script src="funcao.js" type="text/javascript" >
+			</script>
+	</head>
+    <body>
+		
+		<br/>
+		
+		<div class="container2">
+			<br />
+			
+			<h1>Fale conosco!</h1>
+			<div class="titulo">Dúvidas, críticas e sugestões. Esse é o lugar!
+	<br/>
+	<br/>
+	<form> <!-- 	name="form" id="contato" action="#"  method="post" onSubmit="return validar();">-->
+	    <fieldset id="formulario"> 
+			
+	  <!-- 	<input type="hidden" id="id" name="id" value="" /> -->
+		<br>
+	  <div class="form-group">
+	    <label for="cnome">Nome:*</label>
+	    <input type="text" name="nome" id="cNome" placeholder="Digite seu nome..." size="30"/><br>
+	    <small id="ajudaNome" class="form-text text-muted">
+			Nome deve ter entre 2 e 50 caracteres.
+		</small>
+	  </div>
+		<br>
+	  <div class="form-group">
+	    <label for="cemail">E-mail:*</label>
+	    <input type="text" name="tEmail" id="cEmail" placeholder="Digite seu e-mail..."  value="" size="30"/><br>
+	  	<small id="ajudaEmail" class="form-text text-muted">
+			Exemplo: meunome@provedor.com.br
+		</small>
+	  </div>
+		<br>
+	  <div class="form-group-assunto"> </div>
+	    <label for="assunto">Assunto:*</label>
+			<div class="radio">
+	    <input  type="radio" name="tAssunto" id="cDuvidas"/>Dúvidas
+		<input  type="radio" name="tAssunto" id="cCriticas"/>Criticas
+		<input  type="radio" name="tAssunto" id="cSugestoes"/>Sugestões
+	  </div>
+		<br>
+	  <div class="form-group">
+        <label for="cMensagem">Mensagem:*</label>
+   		<textarea name="tMensagem" id="cMensagem" rows="6" cols="31" placeholder="Mensagem..."></textarea><br>
+   		<small id="ajudaMensagem" class="form-text text-muted"> <center> A mensagem deve ter entre 50 e 500 caracteres.</center>
+		</small>
+	  </div>
+			</fieldset>
+		<br>
+		<div>
+  <input type="checkbox" name="tCheck" id="cCheck" value="on" >
+ 		Desejo receber notificação das novidades sobre produtos.
+		 
+		</div>
+		<br>
+	  <div class="form-group float-center">
+	  		<a href="/"><input type="button" class="btn btn-dark" value="Voltar" /></a>
+	  		<input type="reset" class="btn btn-dark" value="Limpar" />
+		    <input type="submit" value="Enviar" />
+	  		
+	  </div>
+	</form>
+	</div>
+		</div>
+		
+	</body>
+</html>
